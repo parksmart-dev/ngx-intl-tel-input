@@ -1,69 +1,61 @@
 {
-  "name": "ngx-intl-tel-input-app",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build_stats": "ng build --stats-json",
-    "analyze": "webpack-bundle-analyzer dist/ngx-intl-tel-input-app/stats.json",
-    "build_lib": "ng build ngx-intl-tel-input",
-    "copy-license": "cp ./LICENSE ./dist/ngx-intl-tel-input",
-    "copy-readme": "cp ./README.md ./dist/ngx-intl-tel-input",
-    "copy-files": "npm run copy-license && npm run copy-readme",
-    "npm_pack": "npm run copy-files && cd dist/ngx-intl-tel-input && npm pack",
-    "package": "npm run build_lib && npm run npm_pack",
-    "postinstall": "ngcc"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^13.0.1",
-    "@angular/common": "^13.0.1",
-    "@angular/compiler": "^13.0.1",
-    "@angular/core": "^13.0.1",
-    "@angular/forms": "^13.0.1",
-    "@angular/platform-browser": "^13.0.1",
-    "@angular/platform-browser-dynamic": "^13.0.1",
-    "@angular/router": "^13.0.1",
-    "bootstrap": "^4.5.2",
-    "core-js": "^3.6.5",
+  "name": "ngx-intl-tel-input",
+  "version": "3.1.3",
+  "peerDependencies": {
+    "@angular/common": "8.x - 12.x",
+    "@angular/core": "8.x - 12.x",
+    "@angular/forms": "8.x - 12.x",
     "google-libphonenumber": "^3.2.3",
     "intl-tel-input": "^17.0.3",
-    "jquery": "^3.5.0",
-    "ngx-bootstrap": "^6.0.0",
-    "popper.js": "^1.16.1",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
+    "ngx-bootstrap": "^6.0.0"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^13.0.1",
-    "@angular/cli": "^13.0.1",
-    "@angular/compiler-cli": "^13.0.1",
-    "@angular/language-service": "^13.0.1",
-    "@types/jasmine": "~3.8.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "ajv": "^6.10.2",
-    "eslint": "^7.2.0",
-    "jasmine-core": "~3.8.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.3.8",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "^2.0.6",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^13.0.3",
-    "prettier": "^2.0.5",
-    "protractor": "^7.0.0",
-    "rollup": "^2.22.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "~4.4.4",
-    "webpack-bundle-analyzer": "^3.9.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webcat12345/ngx-intl-tel-input"
+  },
+  "author": {
+    "name": "webcat12345",
+    "email": "webcat91@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "ng8",
+    "ng9",
+    "ng10",
+    "angular 8",
+    "angular 9",
+    "angular 10",
+    "angular 11",
+    "angular 12",
+    "intl-tel-input",
+    "phone number",
+    "validation"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webcat12345/ngx-intl-tel-input/issues"
+  },
+  "module": "fesm2015/ngx-intl-tel-input.mjs",
+  "es2020": "fesm2020/ngx-intl-tel-input.mjs",
+  "esm2020": "esm2020/ngx-intl-tel-input.mjs",
+  "fesm2020": "fesm2020/ngx-intl-tel-input.mjs",
+  "fesm2015": "fesm2015/ngx-intl-tel-input.mjs",
+  "typings": "ngx-intl-tel-input.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./ngx-intl-tel-input.d.ts",
+      "esm2020": "./esm2020/ngx-intl-tel-input.mjs",
+      "es2020": "./fesm2020/ngx-intl-tel-input.mjs",
+      "es2015": "./fesm2015/ngx-intl-tel-input.mjs",
+      "node": "./fesm2015/ngx-intl-tel-input.mjs",
+      "default": "./fesm2020/ngx-intl-tel-input.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
   }
 }
